@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="img/a.png" type="image/x-icon">
+    <link rel="icon" href="img/a.png" type="image/png">
+    <title>X-Plosion | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Navbar Styles */
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .navbar:hover {
+            background-color: #f8f9fa;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            position: relative;
+            transition: transform 0.3s, color 0.3s;
+            color: #007bff;
+        }
+
+        .navbar-brand:hover {
+            transform: scale(1.05);
+            color: #0056b3;
+        }
+
+        .navbar-brand img {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+            transition: transform 0.3s;
+        }
+
+        .navbar-brand:hover img {
+            transform: scale(1.1);
+        }
+
+        .nav-link {
+            color: #007bff;
+            transition: color 0.3s, transform 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        /* Help Button */
+        .help-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            border-radius: 50px;
+            padding: 15px;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .help-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 86, 179, 0.4);
+        }
+
+        .help-icon {
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .help-button a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/a.png" alt="X-Plosion Logo">
+            <span class="logo-tooltip">X-Plosion Syndicate</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="payment.html">Payment</a></li>
+            </ul>
+        </div>
+    </nav>               
+
+    <div class="help-button">
+        <a href="https://youtu.be/uFYbDKgZqQo" target="_blank">
+            <div class="help-icon">HELP</div>
+        </a>
+    </div>
+
+    <div class="container text-center mt-5 welcome-section" id="mainContent">
+        <h1 class="welcome-title">X-Plosion Syndicate | Store!</h1>
+        <p class="welcome-subtitle">Tetap lah jadi pesuter, jangan pesatir.</p>
+        <a href="https://dribbble.com/shots/15901428-Coming-Soon/attachments/7730088?mode=media" class="btn btn-primary btn-lg">Coming Soon !!</a>
+        <a href="request.html" class="btn btn-primary btn-lg">Request Modpack</a>
+        <a href="https://dribbble.com/shots/15901428-Coming-Soon/attachments/7730088?mode=media" class="btn btn-primary btn-lg">Coming Soon !!</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+    
+        // Disable F12, Ctrl+Shift+I, Ctrl+U, and Ctrl+S (Common Developer Tools Shortcuts)
+        document.onkeydown = function(e) {
+            if (e.key === 'F12' || 
+                (e.ctrlKey && e.shiftKey && e.key === 'I') || 
+                (e.ctrlKey && e.key === 'U') ||
+                (e.ctrlKey && e.key === 's')) { // Prevent Control + S
+                e.preventDefault();
+            }
+        };
+    </script>
+    
+    
+</body>
+</html>
